@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce_shop?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: Omarm@138
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+jwt:
+  secret: change-this-secret-key-to-a-long-random-production-secret-123456789
+  feign:
+    circuitbreaker:
+      enabled: true
